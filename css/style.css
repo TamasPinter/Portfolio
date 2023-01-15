@@ -1,21 +1,102 @@
+:root {
+    --borders: #706767;
+    --project1: url("../images/database1.png");
+    --project2: url("../images/database2.gif");
+    --project3: url("")
+}
+
 html {
     margin: 0px;
+  
+}
+
+a {
+    color:black;
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+
+a:after {
+    content: "  /  ";
+    text-decoration: none;
+}
+
+a:first-child:before {
+    content: ">>   ";
+    text-decoration: none;
+}
+
+a:last-child:after {
+    content: "   <<";
+    text-decoration: none;
 }
 
 body {
-    background-color: black;
+    background-color: rgb(21, 17, 247);
+    
 }
 
 header img {
     width: 100%;
     margin:0px;
     height:fit-content;
-
+    
 }
 
 nav {
     background-color: rgb(2, 2, 155);
     text-align: right;
     height: 20px;
+}
+
+aside {
+    font-size: 20px;
+    border: 2px solid #8a8686;
+    align-items:center;
+    max-width: 400px;
+    max-height: fit-content;
+}
+
+aside img {
+    max-width: 150px;
+    max-height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main {
+    
+    display: flex;
+}
+
+.indented {
+    text-indent: 30px;
+}
+
+.image {
+    background-image: var(--project1);
+    position: relative;
+    box-sizing: border-box;
+    height: 400px;
+    width: 1156px;
+    margin: 0px;
+    background-repeat:no-repeat;
+    background-size: cover;
+    border: 3px solid var(--borders);
+    transition: all 0.5s ease-in-out;
+    padding: 5px;
 
 }
+
+.image:hover {
+    background-image: var(--project2);
+    box-shadow: inset 0px 0px 8px crimson, 0px 0px 15px crimson;
+    
+}
+
+main article {
+   
+}
+
