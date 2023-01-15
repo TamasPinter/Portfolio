@@ -1,0 +1,21 @@
+html {
+    margin: 0px;
+}
+
+body {
+    background-color: black;
+}
+
+header img {
+    width: 100%;
+    margin:0px;
+    height:fit-content;
+
+}
+
+nav {
+    background-color: rgb(2, 2, 155);
+    text-align: right;
+    height: 20px;
+
+}
