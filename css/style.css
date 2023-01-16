@@ -7,17 +7,17 @@
     --project5: url("../images/Tech.png");
     --project6: url("../images/Tech.gif");
     --project7: url("../images/Hack.png");
-    --project8: url("..images/Hack.gif");
+    --project8: url("../images/Hack.gif");
 }
 
 html {
     margin: 0px;
-    flex: auto;
+    
     
 }
 
 a {
-    color:black;
+    color:rgb(212, 212, 212);
     font-weight: bold;
     text-decoration: none;
     
@@ -40,7 +40,7 @@ a:last-child:after {
 
 body {
     background-color: rgb(21, 17, 247);
-    
+    flex-direction: column;
 
 }
 
@@ -48,6 +48,7 @@ header img {
     width: 100%;
     margin:0px;
     height:fit-content;
+    display:flex;
     
 }
 
@@ -58,11 +59,14 @@ nav {
 }
 
 aside {
+    color:rgb(212, 212, 212);
     font-size: 20px;
     border: 2px solid #8a8686;
     align-items:center;
     width: 400px;
     max-height: fit-content;
+    flex: 1;
+    
     
    
 }
@@ -76,8 +80,10 @@ aside img {
 }
 
 main {
-    display: inline-flex;
-  
+    display: flex;
+    flex-wrap: wrap;
+    flex: 3;
+    
 }
 
 .indented {
@@ -97,6 +103,7 @@ main {
     border: 3px solid var(--borders);
     transition: all 0.5s ease-in-out;
     
+    
 
 }
 
@@ -106,17 +113,11 @@ main {
     
 }
 
-main article {
-     flex:auto;
-     flex-wrap: wrap;
-     flex-direction: row;
-    
-    
-}
-
 .image2 {
     background-image: var(--project3);
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     box-sizing: border-box;
     height:290px;
     width: 382px;
@@ -125,6 +126,7 @@ main article {
     background-size: cover;
     border: 3px solid var(--borders);
     transition: all 0.5s ease-in-out;
+    flex: 3;
     
 }
 
@@ -135,11 +137,14 @@ main article {
 
 article {
     display: block;
+    
 }
 
 .image3 {
     background-image: var(--project5);
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     box-sizing: border-box;
     height: 290px;
     width: 383px;
@@ -148,6 +153,7 @@ article {
     background-size: cover;
     border: 3px solid var(--borders);
     transition: all 0.5s ease-in-out;
+    flex: 4;
     
 }
 
@@ -157,12 +163,18 @@ article {
 }
 
 section {
-    display: inline-block;
+    flex: 0 0 400%;
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    
 }
 
 .image4 {
     background-image: var(--project7);
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     box-sizing: border-box;
     height: 290px;
     width: 383px;
@@ -178,3 +190,30 @@ section {
     background-image: var(--project8);
     box-shadow: inset 0px 0px 8px crimson, 0px 0px 15px crimson;
 }
+
+footer {
+    color: rgb(212, 212, 212);
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+
+    main,
+    nav,
+    section,
+    article {
+    flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .image2,
+    .image3,
+    .image4 {
+        flex-shrink: calc(33.3333%);
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+    
