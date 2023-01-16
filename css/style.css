@@ -2,12 +2,18 @@
     --borders: #706767;
     --project1: url("../images/database1.png");
     --project2: url("../images/database2.gif");
-    --project3: url("")
+    --project3: url("../images/nano.png");
+    --project4: url("../images/nano.gif");
+    --project5: url("../images/Tech.png");
+    --project6: url("../images/Tech.gif");
+    --project7: url("../images/Hack.png");
+    --project8: url("..images/Hack.gif");
 }
 
 html {
     margin: 0px;
-  
+    flex: auto;
+    
 }
 
 a {
@@ -35,6 +41,7 @@ a:last-child:after {
 body {
     background-color: rgb(21, 17, 247);
     
+
 }
 
 header img {
@@ -54,8 +61,10 @@ aside {
     font-size: 20px;
     border: 2px solid #8a8686;
     align-items:center;
-    max-width: 400px;
+    width: 400px;
     max-height: fit-content;
+    
+   
 }
 
 aside img {
@@ -67,8 +76,8 @@ aside img {
 }
 
 main {
-    
-    display: flex;
+    display: inline-flex;
+  
 }
 
 .indented {
@@ -77,7 +86,8 @@ main {
 
 .image {
     background-image: var(--project1);
-    position: relative;
+    display: flex;
+    position:relative;
     box-sizing: border-box;
     height: 400px;
     width: 1156px;
@@ -86,7 +96,7 @@ main {
     background-size: cover;
     border: 3px solid var(--borders);
     transition: all 0.5s ease-in-out;
-    padding: 5px;
+    
 
 }
 
@@ -97,6 +107,74 @@ main {
 }
 
 main article {
-   
+     flex:auto;
+     flex-wrap: wrap;
+     flex-direction: row;
+    
+    
 }
 
+.image2 {
+    background-image: var(--project3);
+    display: inline-block;
+    box-sizing: border-box;
+    height:290px;
+    width: 382px;
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 3px solid var(--borders);
+    transition: all 0.5s ease-in-out;
+    
+}
+
+.image2:hover {
+    background-image: var(--project4);
+    box-shadow: inset 0px 0px 8px crimson, 0px 0px 15px crimson;
+}
+
+article {
+    display: block;
+}
+
+.image3 {
+    background-image: var(--project5);
+    display: inline-block;
+    box-sizing: border-box;
+    height: 290px;
+    width: 383px;
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 3px solid var(--borders);
+    transition: all 0.5s ease-in-out;
+    
+}
+
+.image3:hover {
+    background-image: var(--project6);
+    box-shadow: inset 0px 0px 8px crimson, 0px 0px 15px crimson;
+}
+
+section {
+    display: inline-block;
+}
+
+.image4 {
+    background-image: var(--project7);
+    display: inline-block;
+    box-sizing: border-box;
+    height: 290px;
+    width: 383px;
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 3px solid var(--borders);
+    transition: all 0.5s ease-in-out;
+    
+}
+
+.image4:hover {
+    background-image: var(--project8);
+    box-shadow: inset 0px 0px 8px crimson, 0px 0px 15px crimson;
+}
