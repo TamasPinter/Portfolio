@@ -206,20 +206,24 @@ footer {
     .image3,
     .image4
      {
+        
         width: 100%;
     flex-direction: column;
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 320px) {
     
+    .image,
     .image2,
     .image3,
     .image4,
     .card,
     section {
-        width:50%;
+        width:100%;
+        height:fit-content;
         flex-direction: column;
+        -ms-flex-align: stretch;
         
         
     }
