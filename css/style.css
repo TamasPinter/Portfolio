@@ -8,7 +8,11 @@
     --project6: url("../images/Tech.gif");
     --project7: url("../images/Hack.png");
     --project8: url("../images/Hack.gif");
+    --crimson: rgb(220, 20, 60);
+    --blue: rgb(2, 2, 155);
+    --white: rgb(212, 212, 212);
 }
+
 
 html {
     margin: 0px;
@@ -20,35 +24,34 @@ html {
 content {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    
 }
 
 a {
-    color:rgb(212, 212, 212);
+    color: var(--white);
     font-weight: bold;
     text-decoration: none;
     
 }
 
-a:after {
+nav a:after {
     content: "  /  ";
     text-decoration: none;
 }
 
-a:first-child:before {
+nav a:first-child:before {
     content: ">>   ";
     text-decoration: none;
 }
 
-a:last-child:after {
+nav a:last-child:after {
     content: "   <<";
     text-decoration: none;
 }
 
 body {
-    background-color: rgb(21, 17, 247);
-    flex-direction: column;
-
+    background-color: var(--blue);
+    
 }
 
 header img {
@@ -60,13 +63,13 @@ header img {
 }
 
 nav {
-    background-color: rgb(2, 2, 155);
+    background-color: var(--blue);
     text-align: right;
     height: 20px;
 }
 
 aside {
-    color:rgb(212, 212, 212);
+    color: var(--white);
     font-size: 20px;
     border: 2px solid #8a8686;
     align-items:center;
@@ -105,7 +108,7 @@ main {
 
 .image {
     background-image: var(--project1);
-    display: flex;
+    
     position:relative;
     box-sizing: border-box;
     height: 400px;
@@ -121,8 +124,9 @@ main {
 }
 
 .image:hover {
+    
     background-image: var(--project2);
-    box-shadow: inset 0px 0px 8px crimson, 0px 0px 15px crimson;
+    box-shadow: inset 0px 0px 8px var(--crimson), 0px 0px 15px var(--crimson);
     
 }
 
@@ -143,7 +147,7 @@ main {
 
 .image2:hover {
     background-image: var(--project4);
-    box-shadow: inset 0px 0px 8px crimson, 0px 0px 15px crimson;
+    box-shadow: inset 0px 0px 8px var(--crimson), 0px 0px 15px var(--crimson);
 }
 
 
@@ -164,7 +168,7 @@ main {
 
 .image3:hover {
     background-image: var(--project6);
-    box-shadow: inset 0px 0px 8px crimson, 0px 0px 15px crimson;
+    box-shadow: inset 0px 0px 8px var(--crimson), 0px 0px 15px var(--crimson);
 }
 
 section {
@@ -190,11 +194,11 @@ section {
 
 .image4:hover {
     background-image: var(--project8);
-    box-shadow: inset 0px 0px 8px crimson, 0px 0px 15px crimson;
+    box-shadow: inset 0px 0px 8px var(--crimson), 0px 0px 15px var(--crimson);
 }
 
 footer {
-    color: rgb(212, 212, 212);
+    color: var(--white);
     text-align: center;
 }
 
@@ -215,7 +219,8 @@ footer {
     .image2,
     .image3,
     .image4,
-    .section {
+    .card,
+    section {
         width:50%;
         flex-direction: column;
         
