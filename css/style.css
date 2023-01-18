@@ -108,7 +108,6 @@ main {
 
 .image {
     background-image: var(--project1);
-    
     position:relative;
     box-sizing: border-box;
     height: 400px;
@@ -132,7 +131,6 @@ main {
 
 .image2 {
     background-image: var(--project3);
-    
     box-sizing: border-box;
     height:290px;
     width: 382px;
@@ -153,7 +151,6 @@ main {
 
 .image3 {
     background-image: var(--project5);
-    
     box-sizing: border-box;
     height: 290px;
     width: 383px;
